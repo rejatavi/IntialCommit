@@ -1,0 +1,34 @@
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import javax.json.Json;
+import javax.json.JsonObject;
+import javax.json.JsonReader;
+public class ReadJsonFromAFile{
+
+	public static void main(String[] args) {
+		
+		
+		try {
+			JsonReader reader;	reader = Json.createReader(
+					new FileReader("home:\\parrot\\Downloads\\person.json"));
+			JsonObject person = reader.readObject();
+
+			System.out.println(person.getString("name"));
+			System.out.println(person.getString("mobile"));
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			System.out.println("file not found");
+		}
+		
+//		JsonObject person = reader.readObject();
+//		
+//		System.out.println(person.getString("name"));
+//		System.out.println(person.getString("mobile"));
+//		
+		
+		
+
+	}
+
+}

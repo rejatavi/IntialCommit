@@ -1,0 +1,37 @@
+<html>
+<script  src="jquery-3.3.1.min.js"></script>
+<script>
+	function addNumber() {
+		$.get("add.jsp", {
+			num1 : $("#num1").val(),
+			num2 : $("#num2").val()
+		}, doUpdate);
+	}
+	function doUpdate(response) {
+		if(response) {
+			$("#result").val(response);
+		}
+	}
+</script>
+<body>
+	<h2>Adding numbers using Jquery</h2>
+	<table>
+		<tr>
+			<td>First no:</td>
+			<td><input type="number" id="num1"></td>
+		</tr>
+		<tr>
+			<td>Second no:</td>
+			<td><input type="number" id="num2"></td>
+		</tr>
+		<tr>
+			<td>Result:</td>
+
+			<td><input type="text" readonly id="result"></td>
+		</tr>
+	</table>
+	<p />
+	<input type="button" id="button1" onclick="addNumber()"
+		value="Add Nubmers" />
+</body>
+</html>

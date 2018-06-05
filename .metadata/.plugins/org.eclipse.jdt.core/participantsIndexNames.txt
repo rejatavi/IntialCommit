@@ -1,0 +1,13 @@
+INDEX VERSION 1.130
+/home/parrot/Eclipse_Projects/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/3568834152.index
+/Web/src
+/home/parrot/Eclipse_Projects/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/3908026590.index
+/Web/src
+/home/parrot/Eclipse_Projects/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/1014697303.index
+/Web/src
+/home/parrot/Eclipse_Projects/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/3529142354.index
+/MiniProj/src
+/home/parrot/Eclipse_Projects/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/1208791639.index
+/Demo/src
+/home/parrot/Eclipse_Projects/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/4168046373.index
+/Web/src

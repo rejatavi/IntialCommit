@@ -1,0 +1,9 @@
+INDEX VERSION 1.4+/home/parrot/Eclipse_Projects/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+366081335.index
+1649520754.index
+424244271.index
+688336345.index
+198232023.index
+782292944.index
+2548441402.index
+2353624328.index

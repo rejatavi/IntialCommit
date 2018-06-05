@@ -1,0 +1,16 @@
+import javax.json.*;
+import javax.json.JsonObjectBuilder;
+import javax.json.JsonObject;
+public class Jso {
+
+	public static void main(String[] args) {
+		JsonObjectBuilder js=Json.createObjectBuillder();
+		js.add("name","sro");
+		js.add("occuptoi","dir");
+		JsonObject person=js.build();
+		System.out.println(person);
+
+
+	}
+
+}

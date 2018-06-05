@@ -1,0 +1,22 @@
+<%@page import="javax.json.JsonObjectBuilder"%>
+<%@page import="javax.json.Json"%>
+<%@page import="javax.json.JsonArrayBuilder"%>
+<%@page import="oracle.jdbc.rowset.OracleCachedRowSet"%>
+<%@page import="javax.sql.rowset.CachedRowSet"%>
+<%@ page language="java" contentType="application/json; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<% 
+javax.sql.rowset.CachedRowSet rs=new OracleCachedRowSet();
+rs.setUrl("jdbc:oracle:thin:@localhost:1521:xe");
+rs.setUsername("hr");
+rs.setPassword("hr");
+rs.setCommand("select first_name || ''||last_name fullname from employees where job_id=?");
+rs.setString(1,request.getParameter("jobid"));
+rs.execute();
+JsonArrayBuilder js=Json.createArrayBuilder();
+while(rs.next()){
+	js.add(rs.getString("fullname"));
+}
+rs.close();
+out.println(js.build().toString());
+%>

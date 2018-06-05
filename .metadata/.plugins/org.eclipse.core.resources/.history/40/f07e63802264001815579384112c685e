@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html><head>
+<style>
+table tr:nth-child(even){
+background-color: #eee;
+}
+table tr:nth-child(odd){
+background-color: #fff;
+color:white;
+}
+</style>
+
+</head>
+<body
+	style="background-color: powderblue; font-family: courier; text-align: center; border: 3px solid Tomato">
+
+	<h2 title="I'm a header">The Title Attribute</h2>
+	<!-- this is imp -->
+
+	<p style="color: darkviolet;"
+		<b><strong>This is a <mark>tool</mark> tip"Mouse <sup>over</sup>
+				this paragraph, to display the title attribute as a tooltip.
+		</strong>></b>
+	</p>
+	<bdo dir="rtl">This line will be written from right to left</bdo>
+	<!-- bdo stands for bi-directionl -->
+	<p>
+		<a href="http://localhost:8001/Web/js.html" target="	blank">Visit
+			my demo</a>
+	</p>
+	<!-- <a href="https://www.w3schools.com/html/" target="_top">HTML5 tutorial!</a>
+		doubt this one -->
+
+	<a href="http://localhost:8001/Web/js.html"> <img src=smiley.gif
+		style="align-content: center;"></a>
+	<img src="img_girl.jpg" width="50" height="60" >
+	<table style="width: 100%; border-color: blue;" border="1">
+		<tr>
+			<th>Firstname</th>
+			<th>LastName</th>
+		</tr>
+		<tr>
+			<td>Ravi</td>
+			<td>Teja</td>
+		</tr>
+		<tr>
+			<td>Ab</td>
+			<td>Devilliers</td>
+		</tr>
+	</table>
+	<style>
+a:link {
+	color: aqua;
+	background-color: none;
+	text-decoration: none;
+}
+
+a:hover {
+	color: silver;
+	background-color: none;
+	text-decoration: underline;
+}
+
+a:active {
+	color: lime;
+	background-color: none;
+	text-decoration: inherit;
+}
+}
+</style>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+import java.io.FileWriter;
+import java.io.IOException;
+
+import javax.json.*;
+import javax.json.JsonObject;
+import javax.json.JsonObjectBuilder;
+
+//import jdk.nashorn.internal.ir.debug.JSONWriter;
+public class Jsun {
+	public static void main(String[] args) throws IOException {
+		JsonObjectBuilder js=Json.createObjectBuilder();
+//		js.add("name", "srikanth");
+		JsonObject person =js.build();
+		System.out.println(person);
+		FileWriter f=new FileWriter("home\\parrot\\Downloads\\person.txt");
+		JsonWriter js1=Json.createWriter(f);
+		js1.writeObject(person);
+		js1.close();
+		f.close();
+
+	}
+
+}
